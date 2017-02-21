@@ -46,6 +46,26 @@
      <property name="title">
       <string>IEEE754 浮点数存储方式</string>
      </property>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>70</y>
+        <width>104</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>150</y>
+        <width>113</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
    </widget>
    <widget class="QWidget" name="tab_2">
