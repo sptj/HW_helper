@@ -22,10 +22,9 @@ class MainWidget(QtGui.QMainWindow, Ui_MainWindow):
         self.setWindowFlags(Qt.FramelessWindowHint)
         self.icon = QtGui.QIcon("icon.png")
         self.setWindowIcon(self.icon)
-        self.isTopLevel()
         self.connect(self.pushButton_exit, QtCore.SIGNAL("clicked()"), QtGui.qApp, QtCore.SLOT("quit()"))
         self.connect(self.pushButton_min, QtCore.SIGNAL("clicked()"), self, QtCore.SLOT("showMinimized()"))
-
+        self.lineEdit.setReadOnly(True)
     def mousePressEvent(self, event):
         if event.button() == Qt.LeftButton:
             self.m_drag = True

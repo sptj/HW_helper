@@ -327,15 +327,15 @@ QScrollBar:left-arrow:horizontal, QScrollBar:right-arrow:horizontal {
 
 /* =================== */
 QLineEdit, QListView, QTreeView, QTableView, QAbstractSpinBox {
+    font-size : 20px;
     background-color: black;
     color: #BBBBBB;
     border: 1px solid #333333;
 }
 
-QAbstractScrollArea, QLineEdit, QTextEdit, QAbstractSpinBox, QComboBox {
+QAbstractScrollArea,  QTextEdit, QAbstractSpinBox, QComboBox {
     border-color: #333333;
     border: 1px solid #333333;
-
 }
 
 /* === QHeaderView === */
