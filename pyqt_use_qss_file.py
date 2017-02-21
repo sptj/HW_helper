@@ -100,7 +100,7 @@ class MainWidget(QtGui.QMainWindow, Ui_MainWindow):
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
     window = MainWidget()
-    set_qss_decorator('layout1.qss')
+    set_qss_decorator('layout.qss')
     window.show()
     sys.exit(app.exec_())
 
