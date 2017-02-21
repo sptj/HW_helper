@@ -43,9 +43,9 @@ class MainWidget(QtGui.QMainWindow, Ui_MainWindow):
         # self.tray.messageClicked.connect(message)
         # ##################################################
         # 注册事件
-        self.connect(self.pushButton, QtCore.SIGNAL("clicked()"), QtGui.qApp, QtCore.SLOT("quit()"))
+        self.connect(self.pushButton_exit, QtCore.SIGNAL("clicked()"), QtGui.qApp, QtCore.SLOT("quit()"))
         #self.connect(self.pushButton, QtCore.SIGNAL("clicked()"), self, QtCore.SLOT("close()"))
-        self.connect(self.pushButton_4, QtCore.SIGNAL("clicked()"), self, QtCore.SLOT("showMinimized()"))
+        self.connect(self.pushButton_min, QtCore.SIGNAL("clicked()"), self, QtCore.SLOT("showMinimized()"))
         # 支持窗口拖动,重写两个方法
         self.pushButton_5.clicked.connect(self.loadFile)
 

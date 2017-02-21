@@ -18,119 +18,56 @@
   <property name="windowTitle">
    <string>test</string>
   </property>
-  <widget class="QGroupBox" name="groupBox">
+  <widget class="QTabWidget" name="tabWidget">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>20</y>
-     <width>221</width>
-     <height>161</height>
+     <x>0</x>
+     <y>0</y>
+     <width>911</width>
+     <height>641</height>
     </rect>
    </property>
-   <property name="title">
-    <string>发送设置</string>
+   <property name="currentIndex">
+    <number>0</number>
    </property>
-   <widget class="QComboBox" name="comboBox">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>30</y>
-      <width>87</width>
-      <height>22</height>
-     </rect>
-    </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Tab 1</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>291</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>IEEE754 浮点数存储方式</string>
+     </property>
+    </widget>
    </widget>
-   <widget class="QComboBox" name="comboBox_2">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>60</y>
-      <width>87</width>
-      <height>22</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="comboBox_3">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>90</y>
-      <width>87</width>
-      <height>22</height>
-     </rect>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QGroupBox" name="groupBox_2">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>190</y>
-     <width>221</width>
-     <height>161</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>接收设置</string>
-   </property>
-   <widget class="QComboBox" name="comboBox_4">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>30</y>
-      <width>87</width>
-      <height>22</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="comboBox_5">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>60</y>
-      <width>87</width>
-      <height>22</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="comboBox_6">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>90</y>
-      <width>87</width>
-      <height>22</height>
-     </rect>
-    </property>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Tab 2</string>
+    </attribute>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>580</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>打开文件</string>
+     </property>
+    </widget>
    </widget>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>370</y>
-     <width>93</width>
-     <height>28</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>发送</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_3">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>370</y>
-     <width>93</width>
-     <height>28</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>接收</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="pushButton_exit">
    <property name="geometry">
     <rect>
      <x>872</x>
@@ -148,7 +85,7 @@
     <string>×</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="pushButton_min">
    <property name="geometry">
     <rect>
      <x>840</x>
@@ -159,19 +96,6 @@
    </property>
    <property name="text">
     <string>_</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_5">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>430</y>
-     <width>93</width>
-     <height>28</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>打开文件</string>
    </property>
   </widget>
  </widget>
