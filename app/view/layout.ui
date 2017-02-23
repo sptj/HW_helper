@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>910</width>
+    <width>904</width>
     <height>641</height>
    </rect>
   </property>
@@ -28,69 +28,69 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
-   <widget class="QWidget" name="tab">
+   <widget class="QWidget" name="tab_float">
     <attribute name="title">
-     <string>Tab 1</string>
+     <string>浮点数转换</string>
     </attribute>
     <widget class="QGroupBox" name="groupBox">
      <property name="geometry">
       <rect>
        <x>20</x>
        <y>10</y>
-       <width>881</width>
+       <width>861</width>
        <height>591</height>
       </rect>
      </property>
      <property name="title">
       <string>IEEE754 浮点数存储方式</string>
      </property>
-     <widget class="QLineEdit" name="lineEdit">
+     <widget class="QLineEdit" name="lineEdit_mem_like">
       <property name="geometry">
        <rect>
-        <x>250</x>
-        <y>60</y>
-        <width>361</width>
+        <x>20</x>
+        <y>110</y>
+        <width>341</width>
         <height>31</height>
        </rect>
       </property>
       <property name="text">
-       <string>0123456789ABCDEF0123456789ABCDEF</string>
+       <string/>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_2">
+     <widget class="QLineEdit" name="lineEdit_float_input">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>60</y>
-        <width>201</width>
+        <x>20</x>
+        <y>50</y>
+        <width>341</width>
         <height>31</height>
        </rect>
       </property>
       <property name="text">
-       <string>123</string>
+       <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="label_float">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>40</y>
+        <x>20</x>
+        <y>30</y>
         <width>72</width>
-        <height>15</height>
+        <height>16</height>
        </rect>
       </property>
       <property name="text">
        <string>浮点数↓</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="label_mem">
       <property name="geometry">
        <rect>
-        <x>250</x>
-        <y>40</y>
-        <width>361</width>
+        <x>20</x>
+        <y>90</y>
+        <width>341</width>
         <height>16</height>
        </rect>
       </property>
@@ -98,24 +98,194 @@
        <string>符合IEEE754标准时，浮点数在内存中的存储格式↓</string>
       </property>
      </widget>
+     <widget class="QLabel" name="label_warn">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>90</y>
+        <width>261</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_return_float">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_appr">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>150</y>
+        <width>72</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>约等于↓</string>
+      </property>
+     </widget>
     </widget>
    </widget>
    <widget class="QWidget" name="tab_2">
     <attribute name="title">
-     <string>Tab 2</string>
+     <string>定点数转换</string>
     </attribute>
-    <widget class="QPushButton" name="pushButton_5">
+    <widget class="QGroupBox" name="groupBox_2">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>580</y>
-       <width>93</width>
-       <height>28</height>
+       <x>20</x>
+       <y>10</y>
+       <width>871</width>
+       <height>591</height>
       </rect>
      </property>
-     <property name="text">
-      <string>打开文件</string>
+     <property name="title">
+      <string>定点数存储方式</string>
      </property>
+     <widget class="QLineEdit" name="lineEdit_fd_mem_like">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>180</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_fd_input">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_fd_input">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>72</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>定点数↓</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label__fd_mem_like">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>341</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>定点数点数在内存中的存储格式↓</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>40</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_return_fd">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>240</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_return_fd">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>220</y>
+        <width>72</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>约等于↓</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_dn_input">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_fn_input">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>120</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_dn_input">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>100</y>
+        <width>72</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>整数位数↓</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_fn_input">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>100</y>
+        <width>72</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>小数位数↓</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
